@@ -4,14 +4,12 @@ const gulpSass = require('gulp-sass');
 
 const sass = gulpSass(sassModule);
 
-const stylesPath = './assets/stylesheet/**/*.scss';
-
 function buildStyles() {
-  return src(stylesPath)
+  return src('./assets/stylesheet/index.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(dest('./dist/stylesheet'));
 }
 
 exports.watchFiles = function () {
-  watch(stylesPath, { ignoreInitial: false }, buildStyles);
+  watch('./assets/stylesheet/**/*.scss', { ignoreInitial: false }, buildStyles);
 }
