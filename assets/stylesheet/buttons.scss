@@ -1,0 +1,17 @@
+.btn {
+  border: none;
+  outline: 0;
+  font-size: 1.6rem;
+  line-height: 1.3333;
+  font-family: inherit;
+}
+
+.icon-btn {
+  display: inline-block;
+  border: none;
+  padding: 0.9rem;
+
+  &--copy {
+    background: transparent url("/assets/images/copy.svg") center/cover no-repeat;
+  }
+}

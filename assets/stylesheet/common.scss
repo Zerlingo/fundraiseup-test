@@ -11,7 +11,12 @@ body {
   font-size: 1.6rem;
   line-height: 1.3333;
   font-family: 'Work Sans', sans-serif;
+  color: $color-txt;
   background: #E5E5E5;
+}
+
+a {
+  color: $color-link;
 }
 
 .hidden {

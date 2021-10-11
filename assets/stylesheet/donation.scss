@@ -1,0 +1,58 @@
+.donation {
+  display: flex;
+  justify-content: space-between;
+
+  &__head {
+
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.4rem;
+  }
+
+  &__label {
+    font-size: 1.4rem;
+    line-height: 1.43;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.8rem;
+
+    &--USD {
+      background: url("/assets/images/dollar-sign.svg") center/cover no-repeat;
+    }
+  }
+
+  &__amount {
+    font-size: 2.4rem;
+    color: $color-txt-green;
+  }
+
+  &__amount-in-USD {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $color-txt-hint;
+  }
+
+  &__id {
+
+  }
+
+  &__id-label {
+    color: $color-txt-hint;
+  }
+
+  &__id-value {
+    display: flex;
+    align-items: center;
+  }
+
+  &__value-copy-btn {
+    margin-left: 0.8rem;
+  }
+}

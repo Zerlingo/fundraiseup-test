@@ -1,0 +1,16 @@
+.l-item {
+  margin-right: 3.2rem;
+  padding: 0.19rem 3.2rem 0.19rem 0;
+  border-right: 1px solid $color-border;
+
+  &__label {
+    font-size: 1.4rem;
+    line-height: 1.43;
+    color: $color-txt-hint;
+    margin-bottom: 0.1rem;
+  }
+
+  &__content {
+
+  }
+}

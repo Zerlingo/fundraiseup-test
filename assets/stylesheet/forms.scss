@@ -20,8 +20,8 @@
     }
 
     &--search {
-      padding-left: 4.2rem;
-      background: $color-white url("/assets/images/search 3.svg") 1.8rem/1.8rem no-repeat;
+      padding-left: 4.1rem;
+      background: $color-white url("/assets/images/search 3.svg") 1.85rem/1.85rem no-repeat;
       background-position: 1.6rem center;
     }
 
@@ -38,10 +38,12 @@
   }
 
   &__select {
-
+    padding: 0.965rem 1.2rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
   }
 
   &--donation-search {
-    margin-right: 4rem;
+    margin-right: 3.2rem;
   }
 }
