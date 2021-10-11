@@ -1,0 +1,20 @@
+.section {
+  border: 1px solid $color-border;
+  border-radius: 0.8rem;
+  box-shadow: 1px 3px 0.3rem rgba(62, 63, 64, 0.1);
+
+  &__body {
+    padding: 2.8rem 3.2rem;
+    background: $color-white;
+  }
+
+  &__footer {
+    padding: 1.6rem 3.2rem;
+    border-top: 1px solid $color-border;
+    background: $color-bg-footer;
+
+    &--actions {
+      background: $color-bg-actions;
+    }
+  }
+}
