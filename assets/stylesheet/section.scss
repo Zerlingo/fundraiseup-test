@@ -1,6 +1,7 @@
 .section {
   border: 1px solid $color-border;
   border-radius: 0.8rem;
+  overflow: hidden;
   box-shadow: 1px 3px 0.3rem rgba(62, 63, 64, 0.1);
 
   &__body {

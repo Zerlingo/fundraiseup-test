@@ -1,6 +1,46 @@
 .form-control {
   display: inline-block;
 
+  &--search {
+
+  }
+
+  &__text {
+    padding: 1.12rem 1.2rem;
+    font-family: inherit;
+    color: $color-txt;
+    border: 1px solid $color-dark-border;
+    border-radius: 0.8rem;
+    background: $color-white;
+
+    &::placeholder {
+      font-size: 1.6rem;
+      color: $color-txt-hint;
+      opacity: 1;
+    }
+
+    &--search {
+      padding-left: 4.2rem;
+      background: $color-white url("/assets/images/search 3.svg") 1.8rem/1.8rem no-repeat;
+      background-position: 1.6rem center;
+    }
+
+    &--light-border {
+      border-color: $color-border;
+    }
+  }
+
+  &__tr-select {
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  &__select {
+
+  }
+
   &--donation-search {
     margin-right: 4rem;
   }
