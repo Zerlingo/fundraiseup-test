@@ -1,11 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="./dist/stylesheet/index.css">
+  <meta charset="UTF-8">
+  <title>Donations</title>
+  <link rel="stylesheet" href="./dist/stylesheet/index.css">
 </head>
 <body>
+<div class="page">
+  <div class="page__header">
+    <div class="section">
+      <div class="section__body">
+        <h1>Donations</h1>
+      </div>
+      <div class="section__footer">
+        <label for="donationSearch" class="hidden">Donation search</label>
+        <input id="donationSearch" type="search" placeholder="Search">
+        <label for="donationSearchStatus" class="hidden">Donation search status</label>
+        <select id="donationSearchStatus">
+          <option value="all">All statuses</option>
+          <option value="success">Success</option>
+          <option value="inProcess">In process</option>
+          <option value="canceled">Canceled</option>
+        </select>
+      </div>
+    </div>
+  </div>
 
+  <div class="page__content page__content--two-columns">
+    <main>
+      <div class="section">
+        <div class="section__body">
+          <div class="donation">
+            <div class="donation__head">
+              <span class="donation__icon donation__icon--USD"></span>
+              <span class="donation__label">Donation</span>
+            </div>
+            <div class="donation__amount">
+              €20.60 EUR
+              <span class="donation__amount-in-USD">≈ $22.22 USD</span>
+            </div>
+            <div class="donation__id">
+              <div class="donation__id-label">ID</div>
+              <div class="donation__id-value">DYHY694Y</div>
+              <button class="icon-btn icon-btn--copy"></button>
+            </div>
+          </div>
+        </div>
+        <div class="section__footer l-items">
+          <div class="l-item">
+            <div class="l-item__label">
+              Status
+            </div>
+            <div class="l-item__content">
+              <div class="status status--success">
+                <span class="status__icon"></span>
+                <span class="status__label">Success</span>
+              </div>
+            </div>
+          </div>
+          <div class="l-item__item">
+            <div class="l-item__label">
+              Supporter
+            </div>
+            <div class="l-item__content">
+              <a href="#">Charlotte Ann</a>
+            </div>
+          </div>
+          <div class="l-item__item">
+            <div class="l-item__label">
+              Campaign
+            </div>
+            <div class="l-item__content">
+              <a href="#">Workout for water</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section__body">
+          <form action="">
+            <div class="tabs">
+              <a href="#behavior" class="tab tab--active">Behavior</a>
+              <a href="#appearance" class="tab">Appearance</a>
+              <a href="#custom fields" class="tab">Custom fields</a>
+              <a href="#questions" class="tab">Questions</a>
+              <a href="#url control" class="tab">Url control</a>
+            </div>
+            <div class="tabs-content">
+              <div class="tab-content tab-content--active" id="behavior">
+                <div class="form-grid">
+                  <div class="form-grid__line">
+                    <div class="form-grid__label">
+                      <label for="designation">Designation</label>
+                    </div>
+                    <div class="form-grid__content">
+                      <select id="designation">
+                        <option value="checkoutSetting">Match Checkout Setting</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-grid__line">
+                    <div class="form-grid__label">
+                      <label for="goal">Goal</label>
+                    </div>
+                    <div class="form-grid__content">
+                      <input id="goal" value="$10.00">
+                      <label for="currency" class="hidden">Currency</label>
+                      <select id="currency">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-grid__line">
+                    <div class="form-grid__label">
+                      Default Amount
+                    </div>
+                    <div class="form-grid__content">
+                      <label for="MatchCheckoutSetting">Match Checkout Setting</label>
+                      <input id="MatchCheckoutSetting" type="radio" name="CheckoutSetting">
+                      <label for="Customize">Customize</label>
+                      <input id="Customize" type="radio" name="CheckoutSetting" checked>
+                      <label for="allowChange">Allow donor to change default currency</label>
+                      <input id="allowChange" type="checkbox" checked>
+                    </div>
+                  </div>
+
+                  <div class="form-grid__line">
+                    <div class="form-grid__label">
+                      <label for="borderSize">Border size</label>
+                    </div>
+                    <div class="form-grid__content">
+                      <input id="borderSize" type="range" min="0" max="3" value="2">
+                      <span class="form-control__hint">2px</span>
+                    </div>
+                  </div>
+
+                  <div class="form-grid__line">
+                    <div class="form-grid__label">
+                      <label for="borderRadius">Border radius</label>
+                    </div>
+                    <div class="form-grid__content">
+                      <input id="borderRadius" type="range" min="0" max="23" value="15">
+                      <span class="form-control__hint">15px</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content" id="appearance"></div>
+              <div class="tab-content" id="custom fields"></div>
+              <div class="tab-content" id="questions"></div>
+              <div class="tab-content" id="url control"></div>
+            </div>
+          </form>
+        </div>
+        <div class="section__footer section__footer--actions">
+          <button class="btn btn--main">Save changes</button>
+          <button class="btn btn--alt">Cancel</button>
+        </div>
+      </div>
+    </main>
+
+    <aside>
+      <div class="section">
+        <nav>
+          <ul>
+            <li><a href="#" class="link-icon">
+              <span class="link-icon__icon link-icon__icon--change"></span>
+              <span class="link-icon__label">
+                Change Amount
+              </span>
+            </a></li>
+            <li><a href="#" class="link-icon">
+              <span class="link-icon__icon link-icon__icon--payment"></span>
+              <span class="link-icon__label">
+                Change Payment Method
+              </span>
+            </a></li>
+            <li><a href="#" class="link-icon">
+              <span class="link-icon__icon link-icon__icon--date"></span>
+              <span class="link-icon__label">
+                Change Date
+              </span>
+            </a></li>
+            <li><a href="#" class="link-icon">
+              <span class="link-icon__icon link-icon__icon--cancel"></span>
+              <span class="link-icon__label">
+                Cancel Recurring
+              </span>
+            </a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+  </div>
+</div>
 </body>
 </html>
