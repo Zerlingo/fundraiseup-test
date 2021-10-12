@@ -4,6 +4,11 @@
   overflow: hidden;
   box-shadow: 1px 3px 0.3rem rgba(62, 63, 64, 0.1);
 
+  &__head {
+    padding: 3.2rem 0 0;
+    background: $color-white;
+  }
+
   &__body {
     padding: 2.8rem 3.2rem;
     background: $color-white;
