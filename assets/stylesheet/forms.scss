@@ -5,9 +5,23 @@
 
   }
 
+  &--donation-search {
+    margin-right: 3.2rem;
+  }
+
+  &--fw {
+    width: 100%;
+  }
+
+  &--mr {
+    margin-right: 2.4rem;
+  }
+
   &__text {
-    padding: 1.12rem 1.2rem;
+    padding: 0.72rem 1.2rem;
     font-family: inherit;
+    font-size: 1.6rem;
+    line-height: 1.5;
     color: $color-txt;
     border: 1px solid $color-dark-border;
     border-radius: 0.8rem;
@@ -17,6 +31,10 @@
       font-size: 1.6rem;
       color: $color-txt-hint;
       opacity: 1;
+    }
+
+    &--small {
+      width: 19.2rem;
     }
 
     &--search {
@@ -38,12 +56,24 @@
   }
 
   &__select {
-    padding: 0.965rem 1.2rem;
+    padding: 0.965rem 0.9rem;
     font-size: 1.6rem;
     line-height: 2.4rem;
+
+    &--fw {
+      width: 100%;
+    }
+
+    &--extra-sm {
+      width: 8rem;
+    }
   }
 
-  &--donation-search {
-    margin-right: 3.2rem;
+  &__range {
+    width: 21.8rem;
+  }
+
+  &__range-label {
+    margin-left: 1.2rem;
   }
 }

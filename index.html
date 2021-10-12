@@ -115,8 +115,9 @@
                       <label for="designation">Designation</label>
                     </div>
                     <div class="form-grid__content">
-                      <div class="form-control">
-                        <select class="form-control__text form-control__select" id="designation">
+                      <div class="form-control form-control--fw">
+                        <select class="form-control__text form-control__select form-control__select--fw"
+                                id="designation">
                           <option value="checkoutSetting">Match Checkout Setting</option>
                         </select>
                       </div>
@@ -127,11 +128,14 @@
                     </div>
                     <div class="form-grid__content">
                       <div class="form-control">
-                        <input class="form-control__text" id="goal" value="$10.00">
+                        <input class="form-control__text form-control__text--small form-control--mr"
+                               id="goal"
+                               value="$10.00">
                       </div>
                       <div class="form-control">
                         <label for="currency" class="hidden">Currency</label>
-                        <select class="form-control__text form-control__select" id="currency">
+                        <select class="form-control__text form-control__select form-control__select--extra-sm"
+                                id="currency">
                           <option value="USD">USD</option>
                           <option value="EUR">EUR</option>
                         </select>
@@ -160,9 +164,12 @@
                       <label for="borderSize">Border size</label>
                     </div>
                     <div class="form-grid__content">
-                      <div class="form-control">
-                        <input class="form-control__range" id="borderSize" type="range" min="0" max="3" value="2">
-                        <span class="form-control__hint">2px</span>
+                      <div class="form-control form-control">
+                        <input class="form-control__range"
+                               id="borderSize"
+                               type="range"
+                               min="0" max="3" value="2">
+                        <span class="form-control__range-label">2px</span>
                       </div>
                     </div>
 
@@ -170,9 +177,12 @@
                       <label for="borderRadius">Border radius</label>
                     </div>
                     <div class="form-grid__content">
-                      <div class="form-control__range">
-                        <input id="borderRadius" type="range" min="0" max="23" value="15">
-                        <span class="form-control__hint">15px</span>
+                      <div class="form-control form-control">
+                        <input class="form-control__range"
+                               id="borderRadius"
+                               type="range"
+                               min="0" max="24" value="15">
+                        <span class="form-control__range-label">15px</span>
                       </div>
                     </div>
                 </div>
