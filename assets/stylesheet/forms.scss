@@ -124,6 +124,34 @@
   &__range-label {
     margin-left: 1.2rem;
   }
+
+  &__checkbox {
+    display: none;
+
+    &:checked + .form-control__checkbox-label {
+
+      &::before {
+        background: $color-white url("/assets/images/On.svg") center no-repeat;
+      }
+    }
+  }
+
+  &__checkbox-label {
+    position: relative;
+    padding-left: 3.6rem;
+
+    &::before {
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 0;
+      content: '';
+      width: 2.4rem;
+      height: 2.4rem;
+      transform: translateY(-50%);
+      background: $color-white url("/assets/images/Off.svg") center no-repeat;
+    }
+  }
 }
 
 .radio-group {
