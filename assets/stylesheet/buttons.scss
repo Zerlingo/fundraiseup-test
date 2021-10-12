@@ -4,6 +4,20 @@
   font-size: 1.6rem;
   line-height: 1.3333;
   font-family: inherit;
+  padding: 1.25rem 2.3rem;
+  border-radius: 0.6rem;
+
+  &--main {
+    color: $color-white;
+    background: $color-bg-cta;
+    border: 1px solid transparent;
+  }
+
+  &--alt {
+    color: $color-txt;
+    background: $color-white;
+    border: 1px solid $color-dark-border;
+  }
 }
 
 .icon-btn {
