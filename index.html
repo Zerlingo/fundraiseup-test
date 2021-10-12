@@ -145,18 +145,39 @@
                     <div class="form-grid__label form-grid__label--multiple">
                       Default Amount
                     </div>
-                    <div class="form-grid__content form-grid__content--multiple">
-                      <div class="form-control">
-                        <input id="MatchCheckoutSetting" type="radio" name="CheckoutSetting">
-                        <label for="MatchCheckoutSetting">Match Checkout Setting</label>
-                      </div>
-                      <div class="form-control">
-                        <input id="Customize" type="radio" name="CheckoutSetting" checked>
-                        <label for="Customize">Customize</label>
-                      </div>
-                      <div class="form-control">
-                        <input id="allowChange" type="checkbox" checked>
-                        <label for="allowChange">Allow donor to change default currency</label>
+                    <div class="form-grid__content form-grid__content--multiple form-grid__content--no-max-w">
+                      <fieldset class="radio-group">
+                        <legend class="legend">Checkout Setting</legend>
+                        <div class="radio-group__item form-control">
+                          <input class="form-control__radio"
+                                 id="MatchCheckoutSetting"
+                                 type="radio"
+                                 name="CheckoutSetting">
+                          <label class="form-control__radio-label" for="MatchCheckoutSetting">
+                            Match Checkout Setting
+                          </label>
+                        </div>
+                        <div class="radio-group__item form-control">
+                          <input class="form-control__radio"
+                                 id="Customize"
+                                 type="radio"
+                                 name="CheckoutSetting"
+                                 checked>
+                          <label class="form-control__radio-label" for="Customize">
+                            Customize
+                          </label>
+                        </div>
+                      </fieldset>
+
+                      <div class="form-grid__content-item form-control">
+                        <input class="form-control__checkbox"
+                               id="allowChange"
+                               type="checkbox"
+                               checked>
+                        <label class="form-control__checkbox-label"
+                               for="allowChange">
+                          Allow donor to change default currency
+                        </label>
                       </div>
                     </div>
 

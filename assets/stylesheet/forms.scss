@@ -74,6 +74,49 @@
     }
   }
 
+  &__radio {
+    display: none;
+
+    &:checked + .form-control__radio-label {
+
+      &::before {
+        border: 2px solid $color-bg-cta;
+      }
+
+      &::after {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 0;
+        content: '';
+        width: 1.2rem;
+        height: 1.2rem;
+        transform: translate(0.7rem, -50%);
+        border-radius: 50%;
+        background: $color-bg-cta;
+      }
+    }
+  }
+
+  &__radio-label {
+    position: relative;
+    padding-left: 3.6rem;
+
+    &::before {
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 0;
+      content: '';
+      width: 2.4rem;
+      height: 2.4rem;
+      transform: translateY(-50%);
+      border: 1px solid $color-dark-border;
+      border-radius: 50%;
+      background: $color-white;
+    }
+  }
+
   &__range {
     width: 21.8rem;
   }
@@ -81,4 +124,23 @@
   &__range-label {
     margin-left: 1.2rem;
   }
+}
+
+.radio-group {
+  margin-bottom: 2.4rem;
+  padding: 0;
+  border: 0;
+
+  &__item {
+    display: block;
+    margin-bottom: 1.2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.legend {
+  display: none;
 }
