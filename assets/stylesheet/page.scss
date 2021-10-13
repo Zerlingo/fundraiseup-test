@@ -9,11 +9,27 @@
   &__inner {
 
     &--two-columns {
-
+      display: grid;
+      grid-template-areas: "main aside";
+      grid-template-columns: 1fr 26.4rem;
+      grid-gap: 2.4rem;
     }
   }
 
   &__content {
     margin-bottom: 2.4rem;
+
+    &--sticky {
+      position: sticky;
+      top: 1.2rem;
+    }
+  }
+
+  &__main {
+    grid-area: main;
+  }
+
+  &__aside {
+    grid-area: aside;
   }
 }
