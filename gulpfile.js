@@ -6,7 +6,7 @@ const sass = gulpSass(sassModule);
 
 function buildStyles() {
   return src('./assets/stylesheet/index.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({ includePaths: ['./node_modules'] }).on('error', sass.logError))
     .pipe(dest('./dist/stylesheet'));
 }
 
