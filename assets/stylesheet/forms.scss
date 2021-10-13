@@ -1,10 +1,6 @@
 .form-control {
   display: inline-block;
 
-  &--search {
-
-  }
-
   &--donation-search {
     margin-right: 3.2rem;
   }
@@ -31,6 +27,15 @@
     border: 1px solid $color-dark-border;
     border-radius: 0.8rem;
     background: $color-white;
+
+    &:hover {
+      background-color: $color-hover-bg;
+    }
+
+    &:focus {
+      border: 1px solid $color-link;
+      outline: none;
+    }
 
     &::placeholder {
       font-size: 1.6rem;
@@ -109,11 +114,19 @@
         box-shadow: inset 0 0 0 0.4rem #FFF;
       }
     }
+
+    &:checked:hover + .form-control__radio-label::before {
+      box-shadow: inset 0 0 0 0.4rem $color-hover-bg;
+    }
   }
 
   &__radio-label {
     position: relative;
     padding-left: 3.6rem;
+
+    &:hover::before {
+      background: $color-hover-bg;
+    }
 
     &::before {
       position: absolute;
@@ -142,7 +155,12 @@
       background: $color-bg-cta;
       border-radius: 0.8rem;
       border: none;
+
+      &:hover {
+        background: lighten($color-bg-cta, 5%);
+      }
     }
+
     &::-webkit-slider-thumb {
       border: none;
       width: 1.9rem;
@@ -152,10 +170,16 @@
       cursor: pointer;
       -webkit-appearance: none;
       margin-top: -9px;
+
+      &:hover {
+        background: lighten($color-bg-cta, 5%);
+      }
     }
+
     &:focus::-webkit-slider-runnable-track {
       background: $color-bg-cta;
     }
+
     &::-moz-range-track {
       width: 100%;
       height: 0.33rem;
@@ -163,7 +187,12 @@
       background: $color-bg-cta;
       border-radius: 0.8rem;
       border: none;
+
+      &:hover {
+        background: lighten($color-bg-cta, 5%);
+      }
     }
+
     &::-moz-range-thumb {
       border: none;
       width: 1.9rem;
@@ -171,7 +200,12 @@
       border-radius: 50%;
       background: $color-bg-cta;
       cursor: pointer;
+
+      &:hover {
+        background: lighten($color-bg-cta, 5%);
+      }
     }
+
     &::-ms-track {
       width: 100%;
       height: 0.33rem;
@@ -179,17 +213,24 @@
       background: transparent;
       border-color: transparent;
       color: transparent;
+
+      &:hover {
+        background: lighten($color-bg-cta, 5%);
+      }
     }
+
     &::-ms-fill-lower {
       background: $color-bg-cta;
       border: none;
       border-radius: 50%;
     }
+
     &::-ms-fill-upper {
       background: $color-bg-cta;
       border: none;
       border-radius: 50%;
     }
+
     &::-ms-thumb {
       margin-top: 1px;
       border: none;
@@ -198,10 +239,16 @@
       border-radius: 50%;
       background: $color-bg-cta;
       cursor: pointer;
+
+      &:hover {
+        background: lighten($color-bg-cta, 5%);
+      }
     }
+
     &:focus::-ms-fill-lower {
       background: $color-bg-cta;
     }
+
     &:focus::-ms-fill-upper {
       background: $color-bg-cta;
     }
