@@ -199,12 +199,28 @@
   }
 
   &__checkbox {
-    display: none;
+    opacity: 0;
+
+    &:hover + .form-control__checkbox-label::before {
+      background-color: $color-hover-bg;
+    }
+
+    &:focus + .form-control__checkbox-label::before {
+      box-shadow: 0 0 0 1px $color-link;
+    }
 
     &:checked + .form-control__checkbox-label {
 
       &::before {
-        background: $color-white url("/assets/images/On.svg") center no-repeat;
+        background: url("/assets/images/On.svg") center no-repeat;
+        background-color: $color-white;
+      }
+    }
+
+    &:checked:hover + .form-control__checkbox-label {
+
+      &::before {
+        background-color: $color-hover-bg;
       }
     }
   }
@@ -222,7 +238,8 @@
       width: 2.4rem;
       height: 2.4rem;
       transform: translateY(-50%);
-      background: $color-white url("/assets/images/Off.svg") center no-repeat;
+      background: url("/assets/images/Off.svg") center no-repeat;
+      background-color: $color-white;
     }
   }
 }
