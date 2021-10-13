@@ -31,3 +31,11 @@ a {
 .hidden {
   display: none;
 }
+
+/* remove padding/text indentation of native select
+   Firefox: */
+@-moz-document url-prefix() {
+  select {
+    text-indent: -2px;
+  }
+}
