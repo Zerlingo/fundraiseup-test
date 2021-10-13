@@ -150,6 +150,11 @@
     background: transparent;
     -webkit-appearance: none;
 
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 1px $color-link;
+    }
+
     &::-webkit-slider-runnable-track {
       width: 100%;
       height: 0.33rem;
