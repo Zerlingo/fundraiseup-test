@@ -33,12 +33,13 @@
     }
 
     &--actions {
-      padding: 2.3rem 3.2rem;
+      padding: 2.3rem 3.2rem 1.8rem;
       background: $color-bg-actions;
     }
   }
 
   &__btn {
     margin-right: 1.2rem;
+    margin-bottom: 0.6rem;
   }
 }
