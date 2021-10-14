@@ -11,6 +11,10 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    &--range + &--range {
+      margin-top: -2.4rem;
+    }
   }
 
   &__label {
@@ -33,20 +37,48 @@
 
     &--multiple {
       align-self: baseline;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--range {
+
+      & label {
+        display: block;
+        margin-top: 1.2rem;
+        margin-bottom: 1.6rem;
+
+        @include media-max(980px) {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
     }
   }
 
   &__content {
     display: flex;
-    max-width: 29.6rem;
+    width: 29.6rem;
 
     &--multiple {
       display: flex;
       flex-direction: column;
     }
 
-    &--no-max-w {
-      max-width: none;
+    &--range {
+
+      & .form-control--range {
+        margin-top: 1.2rem;
+        margin-bottom: 1.6rem;
+
+        @include media-max(980px) {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &--auto-width {
+      width: auto;
     }
   }
 }
