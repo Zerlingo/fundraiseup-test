@@ -16,22 +16,24 @@
         <h1>Donations</h1>
       </div>
       <div class="section__footer">
-        <div class="form-control form-control--search form-control--donation-search">
-          <label class="form-control__label hidden" for="donationSearch">Donation search</label>
-          <input class="form-control__text form-control__text--search form-control__text--light-border"
-                 id="donationSearch"
-                 type="search"
-                 placeholder="Search">
-        </div>
+        <div class="search-form">
+          <div class="form-control form-control--search search-form__search">
+            <label class="form-control__label hidden" for="donationSearch">Donation search</label>
+            <input class="form-control__text form-control__text--search form-control__text--light-border"
+                   id="donationSearch"
+                   type="search"
+                   placeholder="Search">
+          </div>
 
-        <div class="form-control">
-          <label class="form-control__label hidden" for="donationSearchStatus">Donation search status</label>
-          <select class="form-control__text form-control__select form-control__select--tr" id="donationSearchStatus">
-            <option value="all">All statuses</option>
-            <option value="success">Success</option>
-            <option value="inProcess">In process</option>
-            <option value="canceled">Canceled</option>
-          </select>
+          <div class="form-control search-form__parameter">
+            <label class="form-control__label hidden" for="donationSearchStatus">Donation search status</label>
+            <select class="form-control__text form-control__select form-control__select--tr" id="donationSearchStatus">
+              <option value="all">All statuses</option>
+              <option value="success">Success</option>
+              <option value="inProcess">In process</option>
+              <option value="canceled">Canceled</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
