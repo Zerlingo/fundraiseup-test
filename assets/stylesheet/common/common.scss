@@ -1,0 +1,49 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include media-max(980px) {
+    font-size: 54.5%;
+  }
+}
+
+body {
+  margin: 5.3rem 1.6rem;
+  font-size: 1.6rem;
+  line-height: 1.3333;
+  font-family: 'Work Sans', sans-serif;
+  color: $color-txt;
+  background: #E5E5E5;
+
+  @include media-max(980px) {
+    margin: 3.2rem 1.2rem 1.2rem;
+  }
+}
+
+a {
+  color: $color-link;
+
+  &:hover {
+    color: lighten($color-link, 10%);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px $color-link;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/* remove padding/text indentation of native select
+   Firefox: */
+@-moz-document url-prefix() {
+  select {
+    text-indent: -2px;
+  }
+}

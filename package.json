@@ -1,0 +1,31 @@
+{
+  "name": "fundraiseup-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx gulp watchFiles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zerlingo/fundraiseup-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zerlingo/fundraiseup-test/issues"
+  },
+  "homepage": "https://github.com/Zerlingo/fundraiseup-test#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-image": "^6.2.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.42.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

@@ -1,0 +1,20 @@
+.status {
+  display: flex;
+  align-items: center;
+
+  &--success {
+    color: $color-txt-green;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.8rem;
+    background: url("/assets/images/status-check.svg") center/cover no-repeat;
+  }
+
+  &__label {
+    line-height: 1.5;
+  }
+}

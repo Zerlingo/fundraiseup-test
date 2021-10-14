@@ -1,0 +1,40 @@
+.btn {
+  border: none;
+  outline: 0;
+  font-size: 1.6rem;
+  line-height: 1.3333;
+  font-family: inherit;
+  padding: 1.26rem 2.3rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  word-break: break-word;
+
+  &:hover {
+    background-color: $color-hover-bg;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 1px $color-link;
+    outline: none;
+  }
+
+  &--main {
+    color: $color-white;
+    background: $color-bg-cta;
+    border: 1px solid transparent;
+
+    &:hover {
+      background: lighten($color-bg-cta, 5%);
+    }
+  }
+
+  &--alt {
+    color: $color-txt;
+    background: $color-white;
+    border: 1px solid $color-dark-border;
+
+    &:focus {
+      border-color: transparent;
+    }
+  }
+}

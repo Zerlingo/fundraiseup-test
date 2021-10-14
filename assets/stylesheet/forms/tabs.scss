@@ -1,0 +1,21 @@
+.tabs {
+
+  &__content {
+    width: 100%;
+    display: flex;
+    padding: 0 2.4rem;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    &:after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      content: '';
+      background: $color-border;
+    }
+  }
+}
