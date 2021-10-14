@@ -40,12 +40,14 @@
   }
 
   &__id {
-
+    margin-right: -2px;
   }
 
   &__id-label {
-    color: $color-txt-hint;
-    margin-bottom: 0.3rem;
+    font-family: 'Source Code Pro', monospace;
+    line-height: 1;
+    color: $color-txt-light;
+    margin-bottom: 0.8rem;
   }
 
   &__id-value {
