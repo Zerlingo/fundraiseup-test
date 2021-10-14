@@ -9,10 +9,11 @@
   &__inner {
 
     &--two-columns {
-      display: grid;
-      grid-template-areas: "main aside";
-      grid-template-columns: 1fr 26.4rem;
-      grid-gap: 2.4rem;
+      display: flex;
+
+      @include media-max(980px) {
+        flex-direction: column;
+      }
     }
   }
 
@@ -26,10 +27,22 @@
   }
 
   &__main {
-    grid-area: main;
+    flex-grow: 1;
+
+    @include media-max(980px) {
+      order: 2;
+    }
   }
 
   &__aside {
-    grid-area: aside;
+    width: 26.4rem;
+    margin-left: 2.4rem;
+    flex-shrink: 0;
+
+    @include media-max(980px) {
+      width: 100%;
+      margin-left: 0;
+      order: 1;
+    }
   }
 }

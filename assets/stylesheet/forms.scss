@@ -145,6 +145,12 @@
       border: 1px solid $color-dark-border;
       border-radius: 50%;
       background: $color-white;
+
+      @include media-max(980px) {
+        width: 2.8rem;
+        height: 2.8rem;
+        left: -2px;
+      }
     }
   }
 
@@ -312,6 +318,11 @@
       transform: translateY(-50%);
       background: url("/assets/images/Off.svg") center no-repeat;
       background-color: $color-white;
+
+      @include media-max(980px) {
+        width: 2.8rem;
+        height: 2.8rem;
+      }
     }
   }
 }

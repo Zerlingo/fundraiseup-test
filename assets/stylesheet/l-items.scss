@@ -1,3 +1,7 @@
 .l-items {
   display: flex;
+
+  @include media-max(452px) {
+    flex-direction: column;
+  }
 }

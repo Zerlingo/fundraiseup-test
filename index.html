@@ -51,7 +51,7 @@
                 <span class="donation__label">Donation</span>
               </div>
               <div class="donation__amount">
-                €20.60 EUR
+                <span class="donation__amount-in-currency"></span> €20.60 EUR
                 <span class="donation__amount-in-USD">≈ $22.22 USD</span>
               </div>
             </div>
@@ -113,7 +113,7 @@
             <div class="tabs-content">
               <div class="tab-content tab-content--active" id="behavior">
                 <div class="form-grid">
-
+                  <div class="form-grid__line">
                     <div class="form-grid__label">
                       <label for="designation">Designation</label>
                     </div>
@@ -125,7 +125,8 @@
                         </select>
                       </div>
                     </div>
-
+                  </div>
+                  <div class="form-grid__line">
                     <div class="form-grid__label">
                       <label for="goal">Goal</label>
                     </div>
@@ -144,11 +145,12 @@
                         </select>
                       </div>
                     </div>
-
+                  </div>
+                  <div class="form-grid__line">
                     <div class="form-grid__label form-grid__label--multiple">
                       Default Amount
                     </div>
-                    <div class="form-grid__content form-grid__content--multiple form-grid__content--no-max-w">
+                    <div class="form-grid__content form-grid__content--multiple form-grid__content--auto-width">
                       <fieldset class="radio-group">
                         <legend class="legend">Checkout Setting</legend>
                         <div class="radio-group__item form-control">
@@ -183,11 +185,12 @@
                         </label>
                       </div>
                     </div>
-
-                    <div class="form-grid__label">
+                  </div>
+                  <div class="form-grid__line">
+                    <div class="form-grid__label form-grid__label--range">
                       <label for="borderSize">Border size</label>
                     </div>
-                    <div class="form-grid__content">
+                    <div class="form-grid__content form-grid__content--range">
                       <div class="form-control form-control--range">
                         <input class="form-control__range"
                                id="borderSize"
@@ -196,19 +199,20 @@
                         <span class="form-control__range-label">2px</span>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="form-grid__label">
+                  <div class="form-grid__line">
+                    <div class="form-grid__label form-grid__label--range">
                       <label for="borderRadius">Border radius</label>
                     </div>
-                    <div class="form-grid__content">
-                      <div class="form-control form-control--range">
-                        <input class="form-control__range"
-                               id="borderRadius"
-                               type="range"
-                               min="0" max="22" value="15">
-                        <span class="form-control__range-label">15px</span>
-                      </div>
+                    <div class="form-control form-control--range">
+                      <input class="form-control__range"
+                             id="borderRadius"
+                             type="range"
+                             min="0" max="22" value="15">
+                      <span class="form-control__range-label">15px</span>
                     </div>
+                  </div>
                 </div>
               </div>
               <div class="tab-content" id="appearance" hidden></div>

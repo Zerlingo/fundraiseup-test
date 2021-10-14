@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
 
+  @include media-max(980px) {
+    position: relative;
+  }
+
   &__head {
 
   }
@@ -33,14 +37,34 @@
     color: $color-txt-green;
   }
 
+  &__amount-in-currency {
+
+    @include media-max(452px) {
+      display: block;
+      margin-bottom: 1.2rem;
+    }
+  }
+
   &__amount-in-USD {
     font-size: 1.6rem;
     line-height: 1.5;
     color: $color-txt-hint;
+
+    @include media-max(452px) {
+      display: block;
+    }
   }
 
   &__id {
     margin-right: -2px;
+
+    @include media-max(980px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__id-label {
@@ -48,6 +72,11 @@
     line-height: 1;
     color: $color-txt-light;
     margin-bottom: 0.8rem;
+
+    @include media-max(980px) {
+      margin-right: 1.2rem;
+      margin-bottom: 0;
+    }
   }
 
   &__id-value {

@@ -4,6 +4,10 @@
 
 html {
   font-size: 62.5%;
+
+  @include media-max(980px) {
+    font-size: 54.5%;
+  }
 }
 
 body {
@@ -13,6 +17,10 @@ body {
   font-family: 'Work Sans', sans-serif;
   color: $color-txt;
   background: #E5E5E5;
+
+  @include media-max(980px) {
+    margin: 3.2rem 1.2rem 1.2rem;
+  }
 }
 
 a {

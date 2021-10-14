@@ -48,6 +48,11 @@
     background-repeat: no-repeat;
     background-position: center/cover;
 
+    @include media-max(980px) {
+      width: 2.1rem;
+      height: 2.1rem;
+    }
+
     &--change {
       background-image: url("/assets/images/menu-icons/repeat.svg");
     }

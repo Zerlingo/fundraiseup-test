@@ -1,9 +1,19 @@
 .search-form {
   display: flex;
 
+  @include media-max(452px) {
+    flex-direction: column;
+  }
+
   &__search {
     width: 33.6rem;
     margin-right: 2.8rem;
+
+    @include media-max(452px) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 1.2rem;
+    }
   }
 
   &__parameter {

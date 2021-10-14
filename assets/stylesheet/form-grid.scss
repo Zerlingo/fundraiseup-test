@@ -1,15 +1,35 @@
 .form-grid {
-  display: grid;
-  grid-template-columns: 15.2rem auto;
-  grid-gap: 2.4rem 1.6rem;
 
   &__line {
     display: flex;
+    margin-bottom: 2.4rem;
+
+    @include media-max(452px) {
+      flex-direction: column;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__label {
+    width: 15.2rem;
+    margin-right: 1.6rem;
     text-align: right;
     align-self: center;
+    flex-shrink: 0;
+
+    @include media-max(980px) {
+      width: 12.5rem;
+    }
+
+    @include media-max(452px) {
+      width: 100%;
+      text-align: left;
+      margin-right: 0;
+      margin-bottom: 1.2rem;
+    }
 
     &--multiple {
       align-self: baseline;
