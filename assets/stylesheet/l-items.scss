@@ -1,5 +1,7 @@
 .l-items {
   display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 0;
 
   @include media-max(452px) {
     flex-direction: column;
