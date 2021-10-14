@@ -128,6 +128,7 @@
   &__radio-label {
     position: relative;
     padding-left: 3.6rem;
+    display: flex;
 
     &:hover::before {
       background: $color-hover-bg;
@@ -306,6 +307,7 @@
   &__checkbox-label {
     position: relative;
     padding-left: 3.6rem;
+    display: flex;
 
     &::before {
       position: absolute;
