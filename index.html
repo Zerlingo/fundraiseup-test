@@ -98,19 +98,29 @@
 
       <div class="page__content section">
         <div class="section__head tabs">
-          <div class="tabs__content">
-            <a href="#behavior" class="tab tab--active">Behavior</a>
-            <a href="#appearance" class="tab">Appearance</a>
-            <a href="#custom fields" class="tab">Custom fields</a>
-            <a href="#questions" class="tab">Questions</a>
-            <a href="#url control" class="tab">Url control</a>
+          <div class="tabs__content" role="tabpanel">
+            <a href="#behavior" class="tab tab--active" role="tab" aria-selected="true" aria-controls="behavior">
+              Behavior
+            </a>
+            <a href="#appearance" class="tab" role="tab" aria-selected="false" aria-controls="appearance">
+              Appearance
+            </a>
+            <a href="#custom fields" class="tab" role="tab" aria-selected="false" aria-controls="custom fields">
+              Custom fields
+            </a>
+            <a href="#questions" class="tab" role="tab" aria-selected="false" aria-controls="questions">
+              Questions
+            </a>
+            <a href="#url control" class="tab" role="tab" aria-selected="false" aria-controls="url control">
+              Url control
+            </a>
           </div>
         </div>
 
         <div class="section__body">
           <form action="">
             <div class="tabs-content">
-              <div class="tab-content tab-content--active" id="behavior">
+              <div class="tab-content tab-content--active" id="behavior" role="tabpanel" aria-expanded="true" >
                 <div class="form-grid">
                   <div class="form-grid__line">
                     <div class="form-grid__label">
@@ -185,7 +195,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-grid__line">
+                  <div class="form-grid__line form-grid__line--range">
                     <div class="form-grid__label form-grid__label--range">
                       <label for="borderSize">Border size</label>
                     </div>
@@ -200,7 +210,7 @@
                     </div>
                   </div>
 
-                  <div class="form-grid__line">
+                  <div class="form-grid__line form-grid__line--range">
                     <div class="form-grid__label form-grid__label--range">
                       <label for="borderRadius">Border radius</label>
                     </div>
@@ -213,11 +223,11 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="tab-content" id="appearance" hidden></div>
-              <div class="tab-content" id="custom fields" hidden></div>
-              <div class="tab-content" id="questions" hidden></div>
-              <div class="tab-content" id="url control" hidden></div>
+              </div >
+              <div class="tab-content" id="appearance" role="tabpanel" aria-expanded="false" hidden></div>
+              <div class="tab-content" id="custom fields" role="tabpanel" aria-expanded="false" hidden></div>
+              <div class="tab-content" id="questions" role="tabpanel" aria-expanded="false" hidden></div>
+              <div class="tab-content" id="url control" role="tabpanel" aria-expanded="false" hidden></div>
             </div>
           </form>
         </div>
