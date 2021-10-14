@@ -3,6 +3,7 @@ const sassModule = require('sass');
 const gulpSass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const clean = require("gulp-clean-css");
+const image = require("gulp-image");
 
 const sass = gulpSass(sassModule);
 
@@ -18,6 +19,13 @@ function buildStyles() {
     .pipe(dest('./dist/stylesheet'));
 }
 
+function optimizeImages() {
+  return src('./assets/images/**/*')
+    .pipe(image())
+    .pipe(dest('./dist/images'))
+}
+
 exports.watchFiles = function () {
   watch('./assets/stylesheet/**/*.scss', { ignoreInitial: false }, buildStyles);
+  watch('./assets/images/**/*.{jpg,jpeg,png,svg}', { ignoreInitial: false }, optimizeImages);
 }
