@@ -1,14 +1,15 @@
 @import "normalize.css/normalize";
 
-@import "constants";
-@import "mixins";
-@import "common";
-@import "typography";
-@import "forms";
+@import "common/constants";
+@import "common/mixins";
+@import "common/common";
+@import "common/typography";
+@import "forms/forms";
 @import "search-form";
-@import "buttons";
-@import "tabs";
-@import "tab";
+@import "forms/btn";
+@import "forms/icon-btn";
+@import "forms/tabs";
+@import "forms/tab";
 @import "page";
 @import "section";
 @import "donation";

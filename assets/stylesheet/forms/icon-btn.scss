@@ -1,0 +1,19 @@
+.icon-btn {
+  display: inline-block;
+  border: none;
+  padding: 0.9rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-hover-bg;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px $color-link;
+  }
+
+  &--copy {
+    background: transparent url("/assets/images/copy.svg") center/cover no-repeat;
+  }
+}
