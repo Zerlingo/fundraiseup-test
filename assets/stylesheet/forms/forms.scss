@@ -46,7 +46,7 @@
     &--search {
       width: 100%;
       padding-left: 4.1rem;
-      background: $color-white url("/assets/images/search 3.svg") 1.85rem/1.85rem no-repeat;
+      background: $color-white url("/assets/images/search.svg") 1.85rem/1.85rem no-repeat;
       background-position: 1.4rem center;
     }
 
@@ -62,7 +62,7 @@
     font-family: inherit;
     font-size: 1.6rem;
     line-height: 2.4rem;
-    background: url("/assets/images/Selector.svg") right 0.2rem center no-repeat;
+    background: url("/assets/images/select-arrow.svg") right 0.2rem center no-repeat;
     appearance: none;
 
     &:hover {
@@ -290,7 +290,7 @@
     &:checked + .form-control__checkbox-label {
 
       &::before {
-        background: url("/assets/images/On.svg") center no-repeat;
+        background: url("/assets/images/checkbox-on.svg") center no-repeat;
         background-color: $color-white;
       }
     }
@@ -317,7 +317,7 @@
       height: 2.4rem;
       border-radius: 0.4rem;
       transform: translateY(-50%);
-      background: url("/assets/images/Off.svg") center no-repeat;
+      background: url("/assets/images/checkbox-off.svg") center no-repeat;
       background-color: $color-white;
 
       @include media-max(980px) {
