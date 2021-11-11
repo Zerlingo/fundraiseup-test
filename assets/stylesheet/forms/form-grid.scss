@@ -23,6 +23,7 @@
     text-align: right;
     align-self: center;
     flex-shrink: 0;
+    word-break: break-word;
 
     @include media-max(980px) {
       width: 12.5rem;
