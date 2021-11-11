@@ -8,6 +8,7 @@
   &__search {
     width: 33.6rem;
     margin-right: 2.8rem;
+    flex-shrink: 0;
 
     @include media-max(452px) {
       width: 100%;
