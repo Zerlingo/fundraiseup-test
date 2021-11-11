@@ -29,7 +29,7 @@
 
   &__link {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 1.1rem 1.6rem;
     color: $color-txt;
     text-decoration: none;
@@ -42,9 +42,11 @@
 
   &__icon {
     display: inline-block;
+    flex-shrink: 0;
     width: 1.8rem;
     height: 1.8rem;
     margin-right: 0.8rem;
+    margin-top: 0.6rem;
     background-repeat: no-repeat;
     background-position: center/cover;
 
@@ -72,5 +74,6 @@
 
   &__label {
     line-height: 1.75;
+    word-break: break-word;
   }
 }
