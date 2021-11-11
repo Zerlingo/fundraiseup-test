@@ -64,6 +64,7 @@
     line-height: 2.4rem;
     background: url("/dist/images/select-arrow.svg") right 0.2rem center no-repeat;
     appearance: none;
+    max-width: 29.6rem;
 
     &:hover {
       background-color: $color-hover-bg;
