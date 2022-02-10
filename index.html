@@ -205,8 +205,11 @@
                         <input class="form-control__range"
                                id="borderSize"
                                type="range"
-                               min="0" max="3" value="2">
-                        <span class="form-control__range-label">2px</span>
+                               min="0"
+                               max="3"
+                               value="2"
+                               data-label="label-border-size">
+                        <span class="form-control__range-label" id="label-border-size">2px</span>
                       </div>
                     </div>
                   </div>
@@ -219,8 +222,11 @@
                       <input class="form-control__range"
                              id="borderRadius"
                              type="range"
-                             min="0" max="22" value="15">
-                      <span class="form-control__range-label">15px</span>
+                             min="0"
+                             max="22"
+                             value="15"
+                             data-label="label-border-radius">
+                      <span class="form-control__range-label" id="label-border-radius">15px</span>
                     </div>
                   </div>
                 </div>
@@ -272,5 +278,6 @@
     </aside>
   </div>
 </div>
+<script src="/dist/scripts/rangeInput.js"></script>
 </body>
 </html>
